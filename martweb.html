@@ -1,0 +1,91 @@
+
+<HTML>
+<HEAD>
+<TITLE>Welcome to Alastair's and Martin's Web Site!
+</TITLE>
+<link rel="shortcut icon" href="http://www.oxfordpubguide.co.uk/favicon.ico">
+<meta name="keywords" content="Martin Birch, oxford pub guide" />
+<meta name="description" content"The website of Martin Birch, containing quotes and random stuff" />
+
+<script language="JavaScript">
+
+var NN3 = false;
+
+image1= new Image();
+
+image1.src = "imgs/archive1.gif";
+
+image1on = new Image();
+
+image1on.src = "imgs/archive2.gif";
+
+image2= new Image();
+
+image2.src = "imgs/random1.gif";
+
+image2on = new Image();
+
+image2on.src = "imgs/random2.gif";
+
+
+
+
+function on3(name)   {
+        document[name].src = eval(name + "on.src");
+}
+function off3(name)  {
+        document[name].src = eval(name + ".src");
+
+}
+NN3 = true;
+
+function on(name)  {
+        if (NN3) on3(name);
+}
+function off(name)  {
+        if (NN3) off3(name);
+
+}
+</script>
+
+</head>
+
+<BODY aLink=#ffff00 bgColor=#000000 link=#ff0000 vLink=#ff0000 text=#ffffff>
+
+
+<table width="100%">
+<tr>
+<td valign="top"><p align="left"><FONT color=#ffffff face=Arial>
+<IMG border=0 src="imgs/martheader400.jpg" width=400></FONT></td>
+
+<td width="500" valign="middle">
+<p align="center"><font face="Arial" color=#ffffff size="6"><b>ALASTAIR AND <br>MARTIN'S WEBSITE</b></font><br><br>
+
+<font face="Arial" color=#ffff00 size="5"><b>CONTENTS</b></font><br><br>
+
+
+<font face="Arial" color=#ffffff size="5">
+
+Details of <a href="birchathon.html">Birchathon</a> 2014
+</font><br><br>
+
+<A STYLE="background: none" HREF="quotemenu.html" onmouseover="on('image1');" 
+onmouseout="off('image1')"><img src="imgs/archive1.gif" border="0" name="image1"></A><br>
+<font face="Arial" color=#ffffff size="4">
+
+Quotes generated during our time at<br>university by friends and lecturers</font><br><br>
+<A STYLE="background: none" HREF="random.html" onmouseover="on('image2');" 
+onmouseout="off('image2')"><img src="imgs/random1.gif" border="0" name="image2"></A><br>
+<font face="Arial" color=#ffffff size="4">
+
+A couple of beer-related<br>distractions</font><br><br>
+
+<p align="center"><font face="Arial" color=#ffff00 size="4">This site is best viewed<br>while drinking Real Ale.<br><br>
+<font face="Arial" color=#ffffff size="4">Martin @ Oxford Pub Guide.co.uk</font>
+</font>
+</td>
+</tr>
+</table>
+
+</BODY>
+</HTML>
